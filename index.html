@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen</title>
+</head>
+
+<body>
+
+    <h1>Genesis Carolina Sanchez Galenano</h1>
+    <h2>GaleanoCarolina</h2>
+    <p>Link de Github: <a href="https://github.com/GaleanoCarolina">https://github.com/GaleanoCarolina</a></p>
+    <!-- Formulario de registro -->
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido"><br>
+        <label for="año">Año de nacimiento:</label>
+        <input type="number" id="anoNacimiento" name="anoDeNacimiento"><br>
+        <label for="mes de nacimiento">Mes de nacimiento:</label>
+        <input type="text" id="mesDeNacimiento" name="mesDeNacimiento"><br>
+        <input type="button" class="enviar" value="Enviar">
+        <input type="button" class="limpiar" value="limpiar">
+    </form>
+
+    <!-- Tabla de registros -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Año de nacimiento</th>
+                <th>Mes de nacimiento</th>
+                <th>¿Es año bisiesto?</th>
+                <th>¿Es mes impar o par?</th>
+            </tr>
+        </thead>
+        <tbody id="tablaDatos">
+            <!-- Aquí se insertarán los registros -->
+        </tbody>
+    </table>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script type="module" src="codigo.js"></script>
+
+</body>
+
+</html>
